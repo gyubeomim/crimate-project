@@ -237,6 +237,7 @@ kbd {
 
 .lang-switch button {
   min-width: 44px;
+  white-space: nowrap;
   height: 30px;
   padding: 0 12px;
   border: 0;
@@ -252,6 +253,33 @@ kbd {
 .lang-switch button[aria-pressed='true'] {
   background: var(--ink);
   color: var(--bg);
+}
+
+/* The page's repository on GitHub, beside the language switch. */
+.header-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 38px;
+  margin-left: -16px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: background-color 140ms ease;
+}
+
+.header-github:hover {
+  background: var(--bg-tint);
+}
+
+.header-github svg {
+  width: 18px;
+  height: 18px;
 }
 
 /* Hero: the slide canvas's dot grid, fading out. */
@@ -842,6 +870,28 @@ h3 {
 
   .site-nav {
     display: none;
+  }
+
+  .header-row {
+    gap: 14px;
+  }
+
+  /* Phones: the mark alone, the name kept for screen readers. */
+  .header-github {
+    flex: none;
+    width: 38px;
+    margin-left: -6px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .header-github-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 
   .header-row {
