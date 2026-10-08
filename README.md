@@ -28,7 +28,7 @@ GitHub Pages serves the root of the `main` branch, so every push to `main` updat
 
 ## Updating the pictures
 
-Every picture and the demo video are live captures of the editor playing `examples/backprop.crim`. They are regenerated from the editor's repository with `npm run site:images`, which writes into this folder's `assets/`.
+Every picture and the demo video are live captures of the editor playing `examples/backprop.crim`. They are regenerated from the editor's repository with `npm run site:images`, which writes into this folder's `assets/`. The AI chat pictures (`chat.webp`, `chat-math.webp`) are real replies from the model connected in the editor, captured with `npm run site:images -- --chat`; they differ from run to run, so look at them before committing.
 
 ---
 
