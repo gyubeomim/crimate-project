@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crimate — explainer slides and timeline animation</title>
-  <meta name="description" content="Crimate is a desktop editor for explainer slides and 2D timeline animation, saved as plain .crim text that people and AI can read and edit — with a built-in AI chat that changes the slide on your ChatGPT plan.">
+  <meta name="description" content="Create explainer slides and 2D animation with editable .crim files, AI chat and your own references. Korean and English interfaces, with desktop packaging for macOS, Windows and Ubuntu/Linux.">
   <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&amp;family=Noto+Sans+KR:wght@400..800&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
   <script>
     // The language before the first paint: the visitor's choice, else the browser's.
@@ -48,7 +48,7 @@
         <a href="#crim">.crim</a>
         <a href="#ai"><span class="en">AI notes</span><span class="ko">AI 메모</span></a>
         <a href="#chat"><span class="en">AI chat</span><span class="ko">AI 채팅</span></a>
-        <a href="#status"><span class="en">Status</span><span class="ko">현황</span></a>
+        <a href="#status"><span class="en">Platforms</span><span class="ko">플랫폼</span></a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
@@ -73,8 +73,8 @@
           <span class="ko">슬라이드로 설명하고,<br>그대로 움직이게.</span>
         </h1>
         <p class="lead">
-          <span class="en">Crimate is a desktop editor for explainer slides and 2D animation. Draw on a canvas the way you would in PowerPoint, animate the same objects on each slide's timeline, and keep the whole deck as plain <code>.crim</code> text that you — or an AI — can read and edit. Or just ask the built-in AI chat to change the slide.</span>
-          <span class="ko">Crimate는 설명 슬라이드와 2D 애니메이션을 함께 만드는 데스크톱 편집기입니다. PowerPoint처럼 캔버스에 그리고, 같은 오브젝트를 슬라이드마다 타임라인에서 움직이고, 덱 전체를 사람과 AI가 함께 읽고 고칠 수 있는 <code>.crim</code> 텍스트로 저장합니다. 내장 AI 채팅에 말로 고쳐 달라고 해도 됩니다.</span>
+          <span class="en">Build explainer slides and 2D animation on one canvas. Animate objects on each slide's timeline, edit the same <code>.crim</code> document by hand or with AI, and work in English or Korean.</span>
+          <span class="ko">한 캔버스에서 설명 슬라이드와 2D 애니메이션을 만듭니다. 슬라이드마다 오브젝트를 움직이고, 같은 <code>.crim</code> 문서를 직접 또는 AI와 함께 고칩니다. 화면 언어는 한국어와 영어 중에서 고를 수 있습니다.</span>
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#demo">
@@ -82,7 +82,7 @@
             <span class="en">Watch it play</span><span class="ko">재생 장면 보기</span>
           </a>
           <a class="button button-quiet" href="#status">
-            <span class="en">See what's ready</span><span class="ko">지금 상태 보기</span>
+            <span class="en">Platforms &amp; availability</span><span class="ko">지원 플랫폼과 공개 현황</span>
           </a>
           <a class="button button-quiet" href="https://github.com/gyubeomim/crimate-project" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -90,8 +90,8 @@
           </a>
         </div>
         <p class="hero-note">
-          <span class="en">In private development · desktop first</span>
-          <span class="ko">비공개 개발 중 · 데스크톱부터</span>
+          <span class="en">In private development · macOS · Windows · Ubuntu/Linux</span>
+          <span class="ko">비공개 개발 중 · macOS · Windows · Ubuntu/Linux</span>
         </p>
       </div>
       <div class="container hero-shot">
@@ -185,12 +185,12 @@
               <span class="ko">캔버스와 파일은 같은 문서</span>
             </h2>
             <p>
-              <span class="en">Every slide, object, animation and note lives in one text file. Select an object and choose <strong>View in crim file</strong> to see its lines highlighted in a small editor beside it. Change a value, press <kbd>⌘</kbd><kbd>↵</kbd>, and the canvas updates in one undo step.</span>
-              <span class="ko">슬라이드, 오브젝트, 애니메이션, 메모가 모두 텍스트 파일 하나에 들어 있습니다. 오브젝트를 선택하고 <strong>View in crim file</strong>을 누르면 그 줄이 강조된 작은 편집기가 옆에 열립니다. 값을 고치고 <kbd>⌘</kbd><kbd>↵</kbd>를 누르면 캔버스에 바로 반영되고, 실행 취소 한 번으로 되돌릴 수 있습니다.</span>
+              <span class="en">Every slide, object, animation and note lives in one text file. Select an object and choose <strong>View in crim file</strong> to see its lines highlighted beside it. Change a value and press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>⌘</kbd> + <kbd>Enter</kbd> on Mac). The canvas updates in one undo step.</span>
+              <span class="ko">슬라이드, 오브젝트, 애니메이션, 메모가 모두 텍스트 파일 하나에 들어 있습니다. 오브젝트를 선택하고 <strong>crim 파일에서 보기</strong>를 누르면 그 줄이 옆에서 강조됩니다. 값을 고치고 <kbd>Ctrl</kbd> + <kbd>Enter</kbd>(Mac은 <kbd>⌘</kbd> + <kbd>Enter</kbd>)를 누르면 캔버스에 반영되고, 실행 취소 한 번으로 되돌릴 수 있습니다.</span>
             </p>
             <p>
               <span class="en">Prefer text? <strong>Edit in crim</strong> puts the whole file where the canvas was. A mistake shows its line and leaves the canvas untouched.</span>
-              <span class="ko">텍스트가 더 편하다면 <strong>Edit in crim</strong>으로 캔버스 자리에서 파일 전체를 편집하세요. 문법이 틀리면 그 줄을 알려 주고 캔버스는 그대로 둡니다.</span>
+              <span class="ko">텍스트가 더 편하다면 <strong>crim으로 편집</strong>으로 캔버스 자리에서 파일 전체를 편집하세요. 문법이 틀리면 그 줄을 알려 주고 캔버스는 그대로 둡니다.</span>
             </p>
           </div>
           <figure class="code-card">
@@ -274,15 +274,18 @@
               <span class="ko">말로 고치고,<br>슬라이드에서 바로 확인.</span>
             </h2>
             <p>
-              <span class="en">Connect your ChatGPT account from the light in the top bar — Crimate signs in with ChatGPT and uses your own plan, no API key — and pick the model and reasoning effort. Then open <strong>Chat with AI</strong> beside the canvas. It reads the slide on screen as <code>.crim</code> text, notes included, and answers with edits that land on the slide as soon as the reply ends.</span>
-              <span class="ko">상단의 신호등에서 ChatGPT 계정을 연결하세요. Crimate는 Sign in with ChatGPT로 로그인해 내 요금제를 쓰므로 API 키가 필요 없습니다. 모델과 추론 강도를 고른 뒤 캔버스 옆에서 <strong>AI 채팅</strong>을 여세요. AI가 화면의 슬라이드를 메모까지 <code>.crim</code> 텍스트로 읽고, 답이 끝나면 고친 내용이 바로 슬라이드에 반영됩니다.</span>
+              <span class="en">Connect your ChatGPT account from the light in the top bar and choose a model and reasoning effort. Crimate uses your ChatGPT plan, without an API key. Float the chat over the canvas or dock it beside the slide while you work.</span>
+              <span class="ko">상단의 신호등에서 ChatGPT 계정을 연결하고 모델과 추론 강도를 고릅니다. API 키 없이 내 ChatGPT 요금제로 동작합니다. 채팅을 캔버스 위에 띄우거나 슬라이드 옆에 붙여 두고 작업할 수 있습니다.</span>
+            </p>
+            <p>
+              <span class="en">Menus, tools and chat follow your choice of English or Korean in <strong>Preferences</strong>. Your slides and saved conversations keep their original text.</span>
+              <span class="ko"><strong>환경설정</strong>에서 한국어와 영어를 바꾸면 메뉴, 도구, 채팅 화면에 바로 적용됩니다. 슬라이드와 저장된 대화의 글은 그대로 유지됩니다.</span>
             </p>
             <ul class="ticks">
-              <li><span class="en">“Fix it as my notes say” turns your AI notes into changes — or just say what you want, notes or not.</span><span class="ko">“메모대로 고쳐 주세요” 한마디로 메모가 변경이 됩니다. 메모가 없어도 원하는 대로 말하면 됩니다.</span></li>
-              <li><span class="en">One reply is one undo step. Only the slide on screen changes — never another slide, a file on disk, or Crimate itself — and nothing is saved until you save.</span><span class="ko">답 하나가 실행 취소 한 번입니다. 바뀌는 것은 화면의 슬라이드뿐이고 다른 슬라이드, 디스크의 파일, Crimate 자체는 건드리지 않으며, 저장하기 전까지는 저장되지 않습니다.</span></li>
-              <li><span class="en">Formulas in replies are typeset like the slide's.</span><span class="ko">답 속의 수식도 슬라이드처럼 조판됩니다.</span></li>
-              <li><span class="en">Conversations save themselves with their file — reopen, rename or delete them any time.</span><span class="ko">대화는 파일별로 자동 저장되고, 언제든 다시 열거나 이름을 바꾸거나 지울 수 있습니다.</span></li>
-              <li><span class="en">The chat's interface is Korean for now; it answers in the language you write in.</span><span class="ko">채팅 화면은 한국어이고, AI는 내가 쓴 언어로 답합니다.</span></li>
+              <li><span class="en">Ask for a change or point to it with a frame-specific AI note.</span><span class="ko">원하는 변경을 말하거나, 특정 프레임의 AI 메모로 고칠 곳을 가리킵니다.</span></li>
+              <li><span class="en">Use <code>@2</code> to choose the slide to edit. Attach other slides or decks as read-only references.</span><span class="ko"><code>@2</code>처럼 수정할 슬라이드를 고르고, 다른 슬라이드나 덱을 읽기 전용 참고로 붙입니다.</span></li>
+              <li><span class="en">Edits are checked before they apply. One reply is one undo step; save the document when you're ready.</span><span class="ko">변경은 검사 후 적용하며, 답 하나를 실행 취소 한 번으로 되돌립니다. 문서는 원할 때 저장합니다.</span></li>
+              <li><span class="en">See typeset formulas and diagram previews in replies. Conversations save by file and can be reopened, renamed or deleted.</span><span class="ko">답 안에서 수식과 도형 미리보기를 봅니다. 대화는 파일별로 저장되며 다시 열기·이름 변경·삭제가 가능합니다.</span></li>
             </ul>
           </div>
           <figure class="chat-card">
@@ -302,33 +305,48 @@
             <span class="ko">요청 한 번에 메모 두 개를 반영했습니다. 손실로 들어가는 순전파 단계는 두 배로 느려지고, 메모가 가리킨 기울기 라벨은 커졌습니다. 변경 다섯 개가 실행 취소 한 번입니다.</span>
           </figcaption>
         </figure>
+        <div class="chat-details">
+          <article>
+            <h3><span class="en">Bring your reference material</span><span class="ko">내 자료를 참고하며 작업</span></h3>
+            <p><span class="en">Allow specific folders in Preferences so AI can read text, code, PDFs and images. Access is read-only and you can revoke it at any time. In the web app, these folders are on the server computer.</span><span class="ko">환경설정에서 허용한 폴더의 텍스트, 코드, PDF, 이미지를 AI가 읽고 참고합니다. 읽기 전용이며 언제든 권한을 해제할 수 있습니다. 웹 앱에서는 서버 컴퓨터의 폴더를 읽습니다.</span></p>
+          </article>
+          <article>
+            <h3><span class="en">Look things up, with sources</span><span class="ko">출처와 함께 웹 검색</span></h3>
+            <p><span class="en">Turn web search on when a question needs outside sources. Cited pages appear as links with the reply. After local file tools run, web search stays off for the rest of that request.</span><span class="ko">외부 자료가 필요한 질문에는 웹 검색을 켭니다. 인용한 페이지는 답 아래 링크로 표시됩니다. 로컬 파일 도구를 사용한 뒤에는 해당 요청의 웹 검색을 중지합니다.</span></p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section section-tint" id="status" aria-labelledby="status-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow"><span class="en">Status</span><span class="ko">현황</span></p>
-          <h2 id="status-title"><span class="en">Where Crimate is today</span><span class="ko">Crimate의 지금</span></h2>
-          <p><span class="en">Crimate is in active, private development. This is the order things are coming in.</span><span class="ko">Crimate는 비공개로 활발히 개발 중입니다. 앞으로의 순서는 이렇습니다.</span></p>
+          <p class="eyebrow"><span class="en">Platforms &amp; availability</span><span class="ko">지원 플랫폼과 공개 현황</span></p>
+          <h2 id="status-title"><span class="en">One editor, on your desktop</span><span class="ko">내 데스크톱에서 쓰는 편집기</span></h2>
+          <p><span class="en">Desktop packaging is in place for macOS, Windows and Ubuntu/Linux. Crimate is still in private development; public downloads are not available yet.</span><span class="ko">macOS, Windows, Ubuntu/Linux용 패키징을 지원합니다. 현재 비공개 개발 중이며, 공개 다운로드는 아직 제공하지 않습니다.</span></p>
         </div>
         <ol class="status">
           <li class="status-item">
-            <span class="pill pill-blue"><span class="en">Next</span><span class="ko">다음</span></span>
-            <h3><span class="en">Desktop · macOS and Windows</span><span class="ko">데스크톱 · macOS와 Windows</span></h3>
-            <p><span class="en">Installers for the editor on this page — the same app, with native open and save.</span><span class="ko">이 페이지의 편집기를 설치 파일로. 같은 앱에 운영체제의 열기·저장 창을 씁니다.</span></p>
+            <span class="pill pill-blue">.dmg / .zip</span>
+            <h3>macOS</h3>
+            <p><span class="en">A Mac app for Apple silicon and Intel, with native file dialogs and <code>.crim</code> file opening.</span><span class="ko">Apple silicon과 Intel용 Mac 앱입니다. 기본 파일 대화상자로 열고 저장하며 <code>.crim</code> 파일을 연결해 엽니다.</span></p>
           </li>
           <li class="status-item">
-            <span class="pill pill-green"><span class="en">Planned</span><span class="ko">계획</span></span>
-            <h3><span class="en">Web</span><span class="ko">웹</span></h3>
-            <p><span class="en">The editor already runs in the browser while it's developed. A public version comes once files can be saved in every browser.</span><span class="ko">편집기는 개발 중에 이미 브라우저에서 돌아갑니다. 모든 브라우저에서 파일을 저장할 수 있게 되면 공개합니다.</span></p>
+            <span class="pill pill-green">.exe</span>
+            <h3>Windows</h3>
+            <p><span class="en">An installer with a desktop shortcut, native open and save dialogs, and <code>.crim</code> file associations.</span><span class="ko">설치 파일로 앱과 바탕 화면 바로가기를 추가합니다. 기본 열기·저장 창과 <code>.crim</code> 파일 연결을 지원합니다.</span></p>
           </li>
           <li class="status-item">
-            <span class="pill pill-muted"><span class="en">Later</span><span class="ko">나중</span></span>
-            <h3>Android</h3>
-            <p><span class="en">First as a viewer and player for decks made on the desktop.</span><span class="ko">먼저 데스크톱에서 만든 덱을 보고 재생하는 앱으로.</span></p>
+            <span class="pill pill-muted">.AppImage</span>
+            <h3>Ubuntu / Linux</h3>
+            <p><span class="en">An AppImage build target for the same canvas, timeline and AI tools on Linux.</span><span class="ko">Linux에서도 같은 캔버스, 타임라인, AI 도구를 쓰도록 AppImage 패키징을 지원합니다.</span></p>
           </li>
         </ol>
+        <div class="web-availability">
+          <h3><span class="en">Also in the browser</span><span class="ko">브라우저에서도</span></h3>
+          <p><span class="en">The same editor runs from a private server, with AI chat and file access on that server. A public hosted service is not available yet.</span><span class="ko">같은 편집기를 개인 서버에서 실행하고 브라우저로 접속할 수 있습니다. AI 채팅과 파일 접근은 그 서버에서 동작하며, 공개 호스팅 서비스는 아직 제공하지 않습니다.</span></p>
+        </div>
+        <p class="status-updated"><span class="en">Updated <time datetime="2026-10-10">October 10, 2026</time></span><span class="ko"><time datetime="2026-10-10">2026년 10월 10일</time> 기준</span></p>
         <p class="stack">
           <span class="en">Built with</span><span class="ko">사용 기술</span>
           <span class="stack-item">TypeScript</span><span class="stack-item">React</span><span class="stack-item">Electron</span><span class="stack-item">Canvas 2D</span><span class="stack-item">MathJax</span><span class="stack-item">OpenAI Responses API</span>

@@ -5,8 +5,8 @@ const TITLES = {
   ko: 'Crimate — 설명 슬라이드와 타임라인 애니메이션'
 };
 const DESCRIPTIONS = {
-  en: 'Crimate is a desktop editor for explainer slides and 2D timeline animation, saved as plain .crim text that people and AI agents can read and edit.',
-  ko: 'Crimate는 설명 슬라이드와 2D 타임라인 애니메이션을 함께 만드는 데스크톱 편집기입니다. 덱은 사람과 AI 에이전트가 함께 읽고 고치는 .crim 텍스트로 저장됩니다.'
+  en: 'Create explainer slides and 2D animation with editable .crim files, AI chat and your own references. Korean and English interfaces, with desktop packaging for macOS, Windows and Ubuntu/Linux.',
+  ko: '편집 가능한 .crim 파일, AI 채팅과 내 참고 자료로 설명 슬라이드와 2D 애니메이션을 만듭니다. 한국어·영어 UI와 macOS·Windows·Ubuntu/Linux 패키징을 지원합니다.'
 };
 const VIDEO_LABELS = {
   en: { pause: 'Pause', play: 'Play' },

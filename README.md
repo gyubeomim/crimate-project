@@ -14,6 +14,18 @@ This repository holds only the page: static HTML, CSS and JavaScript with no bui
 - `assets/` — captures of the Crimate editor: screenshots (WebP), the demo video (MP4) and the link preview (`og.jpg`).
 - `.nojekyll` — GitHub Pages serves the files as they are.
 
+## Current product coverage
+
+The English and Korean page covers slide editing with AI, `@` slide/deck references,
+floating or docked chat, math and diagram previews, conversation history, optional
+web search, and read-only access to folders the user allows. Interface language is
+selectable in the app's Preferences.
+
+Platform status distinguishes the macOS (`.dmg`/`.zip`), Windows (`.exe`) and
+Ubuntu/Linux (`.AppImage`) packaging targets from public availability. There are
+currently no public installer downloads or hosted editor links. Add download links
+only after the corresponding release assets are published.
+
 ## Preview locally
 
 ```bash
@@ -28,7 +40,7 @@ GitHub Pages serves the root of the `main` branch, so every push to `main` updat
 
 ## Updating the pictures
 
-Every picture and the demo video are live captures of the editor playing `examples/backprop.crim`. They are regenerated from the editor's repository with `npm run site:images`, which writes into this folder's `assets/`. The AI chat pictures (`chat.webp`, `chat-math.webp`) are real replies from the model connected in the editor, captured with `npm run site:images -- --chat`; they differ from run to run, so look at them before committing.
+Every picture and the demo video are live captures of the editor playing `examples/backprop.crim`. From the editor's repository, run `npm run site:images -- --url http://127.0.0.1:5273/ --out ../crimate-project/assets` to target this checkout explicitly. The AI chat pictures (`chat.webp`, `chat-math.webp`) are real replies from the model connected in the editor; add `--chat` to capture new replies. This uses the connected account, and replies differ from run to run, so inspect them before committing.
 
 ---
 

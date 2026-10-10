@@ -752,7 +752,38 @@ h3 {
   vertical-align: -0.08em;
 }
 
-/* Status */
+.chat-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.chat-details article,
+.web-availability {
+  padding-top: 24px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.chat-details p,
+.web-availability p {
+  margin: 12px 0 0;
+  color: var(--ink-2);
+  font-size: 16px;
+}
+
+.web-availability {
+  margin-top: 32px;
+  max-width: 760px;
+}
+
+.status-updated {
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Platforms and availability */
 .status {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -847,6 +878,10 @@ h3 {
 
 /* Narrower windows */
 @media (max-width: 960px) {
+  .site-nav {
+    display: none;
+  }
+
   .split,
   .split-media {
     grid-template-columns: minmax(0, 1fr);
@@ -866,10 +901,6 @@ h3 {
 @media (max-width: 720px) {
   body {
     font-size: 16px;
-  }
-
-  .site-nav {
-    display: none;
   }
 
   .header-row {
@@ -917,7 +948,8 @@ h3 {
   }
 
   .cards,
-  .status {
+  .status,
+  .chat-details {
     grid-template-columns: minmax(0, 1fr);
   }
 
