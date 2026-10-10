@@ -13,6 +13,7 @@ This repository holds only the page: static HTML, CSS and JavaScript with no bui
 - `main.js` — the language switch and the demo video (plays while on screen, pausable, respects reduced motion).
 - `assets/` — captures of the Crimate editor: screenshots (WebP), the demo video (MP4) and the link preview (`og.jpg`).
 - `.nojekyll` — GitHub Pages serves the files as they are.
+- `favicon.svg` — the official Crimate mark, shared by the header and browser tab. Keep it identical to `apps/electron/renderer/public/favicon.svg` in the app repository; the desktop icons are rendered from that same source.
 
 ## Current product coverage
 

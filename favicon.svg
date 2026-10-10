@@ -1,7 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0f172a"/>
-  <rect x="5" y="11" width="9" height="10" rx="2.5" fill="none" stroke="#60a5fa" stroke-width="2.2"/>
-  <path d="M14.5 16h6.5" stroke="#f8fafc" stroke-width="2" stroke-linecap="round"/>
-  <path d="M18.5 13.4 21.4 16l-2.9 2.6" fill="none" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="24.5" cy="16" r="3.6" fill="none" stroke="#34d399" stroke-width="2.2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Crimate</title>
+  <defs>
+    <linearGradient id="crimate-tile" x1="8" y1="4" x2="54" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b2b46"/>
+      <stop offset="1" stop-color="#0b1427"/>
+    </linearGradient>
+    <linearGradient id="crimate-mint" x1="38" y1="27" x2="53" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#91f2cd"/>
+      <stop offset="1" stop-color="#35dba4"/>
+    </linearGradient>
+  </defs>
+  <rect data-icon-background="" width="64" height="64" rx="17" fill="url(#crimate-tile)"/>
+  <rect data-icon-decoration="" x="10.5" y="17" width="31" height="27" rx="6" transform="rotate(-9 26 30.5)" fill="#60a5fa" opacity="0.2"/>
+  <rect id="crimate-slide" x="11" y="21" width="31" height="26" rx="6" fill="#172b49" stroke="#79b7ff" stroke-width="3.5"/>
+  <path data-icon-ink="" d="M18.5 29.5h14M18.5 36h8" fill="none" stroke="#e5f0ff" stroke-width="3" stroke-linecap="round"/>
+  <path id="crimate-play" fill="url(#crimate-mint)" fill-rule="evenodd" d="M57 37a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM45.35 32.4a.9.9 0 0 0-1.4.75v7.7a.9.9 0 0 0 1.4.75l6.2-3.85a.9.9 0 0 0 0-1.5Z"/>
 </svg>

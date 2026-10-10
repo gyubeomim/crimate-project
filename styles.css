@@ -193,18 +193,6 @@ kbd {
   height: 30px;
 }
 
-.brand-mark-bg {
-  fill: #0f172a;
-  stroke: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  .brand-mark-bg {
-    fill: #1e293b;
-    stroke: rgba(148, 163, 184, 0.4);
-  }
-}
-
 .site-nav {
   display: flex;
   gap: 4px;
