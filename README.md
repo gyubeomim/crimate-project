@@ -22,6 +22,11 @@ floating or docked chat, math and diagram previews, conversation history, option
 web search, and read-only access to folders the user allows. Interface language is
 selectable in the app's Preferences.
 
+The interactive lesson section shows native buttons/sliders, the engine-built Cream pixel lecturer,
+and timeline-synced phrase-by-phrase caption highlighting. It also covers editable default AI
+instructions and bounded AI preference changes with Undo. `assets/cream-lecture.png` is an actual
+capture of the app's original `lecturer-demo.crim`, with no third-party reference material.
+
 Platform status distinguishes the macOS (`.dmg`/`.zip`), Windows (`.exe`) and
 Ubuntu/Linux (`.AppImage`) packaging targets from public availability. There are
 currently no public installer downloads or hosted editor links. Add download links
@@ -41,7 +46,7 @@ GitHub Pages serves the root of the `main` branch, so every push to `main` updat
 
 ## Updating the pictures
 
-Every picture and the demo video are live captures of the editor playing `examples/backprop.crim`. From the editor's repository, run `npm run site:images -- --url http://127.0.0.1:5273/ --out ../crimate-project/assets` to target this checkout explicitly. The AI chat pictures (`chat.webp`, `chat-math.webp`) are real replies from the model connected in the editor; add `--chat` to capture new replies. This uses the connected account, and replies differ from run to run, so inspect them before committing.
+The original pictures and demo video are live captures of the editor playing `examples/backprop.crim`. From the editor's repository, run `npm run site:images -- --url http://127.0.0.1:5273/ --out ../crimate-project/assets` to target this checkout explicitly. The AI chat pictures (`chat.webp`, `chat-math.webp`) are real replies from the model connected in the editor; add `--chat` to capture new replies. This uses the connected account, and replies differ from run to run, so inspect them before committing. For the Cream picture, run `CRIMATE_BROWSER_CHANNEL=chrome npm run smoke:lecturer` and copy `output/playwright/lecturer/02-both-point.png` to `assets/cream-lecture.png`.
 
 ---
 

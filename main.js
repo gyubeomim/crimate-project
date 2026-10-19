@@ -5,8 +5,8 @@ const TITLES = {
   ko: 'Crimate — 설명 슬라이드와 타임라인 애니메이션'
 };
 const DESCRIPTIONS = {
-  en: 'Create explainer slides and 2D animation with editable .crim files, AI chat and your own references. Korean and English interfaces, with desktop packaging for macOS, Windows and Ubuntu/Linux.',
-  ko: '편집 가능한 .crim 파일, AI 채팅과 내 참고 자료로 설명 슬라이드와 2D 애니메이션을 만듭니다. 한국어·영어 UI와 macOS·Windows·Ubuntu/Linux 패키징을 지원합니다.'
+  en: "Create explainer slides and interactive visual lessons with timeline animation, Cream's phrase-by-phrase captions and AI editing. In development for macOS, Windows and Linux.",
+  ko: '타임라인 애니메이션, Cream의 의미 구절별 자막, AI 편집으로 설명 슬라이드와 인터랙티브 강의를 만듭니다. macOS, Windows, Linux용으로 개발 중입니다.'
 };
 const VIDEO_LABELS = {
   en: { pause: 'Pause', play: 'Play' },
